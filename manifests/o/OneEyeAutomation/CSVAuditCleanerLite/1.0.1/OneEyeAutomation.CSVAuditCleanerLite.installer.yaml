@@ -1,0 +1,20 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: OneEyeAutomation.CSVAuditCleanerLite
+PackageVersion: 1.0.1
+InstallerType: zip
+NestedInstallerType: portable
+UpgradeBehavior: install
+Commands:
+- csv-audit-cleaner-lite
+ArchiveBinariesDependOnPath: true
+ReleaseDate: 2026-07-31
+Installers:
+- Architecture: x64
+  NestedInstallerFiles:
+  - RelativeFilePath: CSV_Audit_Cleaner_Lite\CSV_Audit_Cleaner_Lite.exe
+    PortableCommandAlias: csv-audit-cleaner-lite
+  InstallerUrl: https://github.com/loved0543-dotcom/csv-audit-cleaner-lite/releases/download/v1.0.1/CSV_Audit_Cleaner_Lite_v1.0.1.zip
+  InstallerSha256: 7787166796EDFB71C892CCDB2DE0A437FA046E9D2C9A66B2EE831AD427D6B21C
+ManifestType: installer
+ManifestVersion: 1.12.0
